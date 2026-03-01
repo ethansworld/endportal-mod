@@ -1,0 +1,32 @@
+// Gradle build script for Forge 1.20.1 mod project
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'com.ethansworld'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-45.0.0'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+// Publishing the mod jar
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+            artifactId = project.name
+        }
+    }
+}
