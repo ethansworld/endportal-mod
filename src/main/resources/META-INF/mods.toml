@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="endportalspawnermod"
+version="1.0.0"
+displayName="End Portal Spawner Mod"
+authors="ethansworld"
+description='''
+Adds an infinite-use item to spawn End Portals in Minecraft 1.20.1!
+'''
